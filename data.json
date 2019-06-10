@@ -1,8 +1,519 @@
-{
+var ingredients = {
 "Arctic": [
-  {
-    "name": "Silver Hibiscus",
-    "rule": ""
-  },  
+{
+  "name": "Silver Hibiscus",
+  "rule": "",
+},
+{
+  "name": "Mortflesh Powder",
+  "rule": "",
+},
+{
+  "name": "Ironwood Heart",
+  "rule": "",
+},
+{
+  "name": "2 Frozen Seedlings",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "2 Arctic Creeper",
+  "rule": "",
+},
+{
+  "name": "Fennel Silk",
+  "rule": "",
+},
+{
+  "name": "Fiend's Ivy",
+  "rule": "",
+},
+{
+  "name": "Voidroot",
+  "rule": "",
+},
+],
+
+"Coastal": [
+{
+  "name": "2 Hydrathistle",
+  "rule": "",
+},
+{
+  "name": "Amanita Cap",
+  "rule": "",
+},
+{
+  "name": "Hyacinth Nectar",
+  "rule": "",
+},
+{
+  "name": "2 Chromus Slime",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Lavender Sprig",
+  "rule": "",
+},
+{
+  "name": "Blue Toadshade",
+  "rule": "",
+},
+{
+  "name": "Wrackwort Bulbs",
+  "rule": "",
+},
+{
+  "name": "2 Cosmos Glond",
+  "rule": "",
+},
+],
+
+"Desert": [
+{
+  "name": "Cosmos Glond",
+  "rule": "",
+},
+{
+  "name": "Arrow Root",
+  "rule": "",
+},
+{
+  "name": "Dried Ephedra",
+  "rule": "",
+},
+{
+  "name": "2 Cactus Juice",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Drakus Flower",
+  "rule": "",
+},
+{
+  "name": "Scillia Beans",
+  "rule": "",
+},
+{
+  "name": "Spineflower Berries",
+  "rule": "",
+},
+{
+  "name": "Voidroot and an Elemental Water",
+  "rule": "",
+},
+],
+
+"Forest": [
+{
+  "name": "Harrada Leaf",
+  "rule": "",
+},
+{
+  "name": "Nightshade Berries",
+  "rule": "",
+},
+{
+  "name": "Emetic Wax",
+  "rule": "",
+},
+{
+  "name": "Verdant Nettle",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Arrow Root",
+  "rule": "",
+},
+{
+  "name": "Ironwood Heart",
+  "rule": "",
+},
+{
+  "name": "Blue Toadshade",
+  "rule": "",
+},
+{
+  "name": "2 Wisp Stalks",
+  "rule": "night",
+},
+],
+
+"Grasslands": [
+{
+  "name": "Harrada Leaf",
+  "rule": "",
+},
+{
+  "name": "Drakus Flower",
+  "rule": "",
+},
+{
+  "name": "2 Lavender Sprig",
+  "rule": "",
+},
+{
+  "name": "Arrow Root",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "2 Scillia Beans",
+  "rule": "",
+},
+{
+  "name": "Cactus Juice",
+  "rule": "",
+},
+{
+  "name": "Tail Leaf",
+  "rule": "",
+},
+{
+  "name": "Hyacinth Nectar",
+  "rule": "",
+},
+],
+
+"Hills": [
+{
+  "name": "Devil's Bloodleaf",
+  "rule": "",
+},
+{
+  "name": "Nightshade Berries",
+  "rule": "",
+},
+{
+  "name": "2 Tail Leaf",
+  "rule": "",
+},
+{
+  "name": "Lavender Sprig",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Ironwood Heart",
+  "rule": "",
+},
+{
+  "name": "Gengko Brush",
+  "rule": "",
+},
+{
+  "name": "2 Rock Vine",
+  "rule": "",
+},
+{
+  "name": "Harrada Leaf",
+  "rule": "",
+},
+],
+
+"Mountain": [
+{
+  "name": "Basilisk's Breath",
+  "rule": "",
+},
+{
+  "name": "2 Frozen Seedlings",
+  "rule": "",
+},
+{
+  "name": "2 Arctic Creeper",
+  "rule": "",
+},
+{
+  "name": "Dried Ephedra",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Drakus Flower",
+  "rule": "",
+},
+{
+  "name": "Luminous Cap Dust",
+  "rule": "cave",
+},
+{
+  "name": "Rock Vine",
+  "rule": "",
+},
+{
+  "name": "Primordial Balm",
+  "rule": "",
+},
+],
+
+"Swamp": [
+{
+  "name": "Devil's Bloodleaf",
+  "rule": "",
+},
+{
+  "name": "Spineflower Berries",
+  "rule": "",
+},
+{
+  "name": "Emetic Wax",
+  "rule": "",
+},
+{
+  "name": "2 Amanita Cap",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "2 Blue Toadshade",
+  "rule": "",
+},
+{
+  "name": "Wrackwort Bulb",
+  "rule": "",
+},
+{
+  "name": "Hydrathistle",
+  "rule": "rain",
+},
+{
+  "name": "Primordial Balm",
+  "rule": "",
+},
+],
+
+"Underdark": [
+{
+  "name": "2 Primordial Balm",
+  "rule": "",
+},
+{
+  "name": "Silver Hibiscus",
+  "rule": "",
+},
+{
+  "name": "Devil's Bloodleaf",
+  "rule": "",
+},
+{
+  "name": "Chromus Slime",
+  "rule": "",
+},
+{
+  "name": "2 Mortflesh Powder",
+  "rule": "",
+},
+{
+  "name": "Fennel Silk",
+  "rule": "",
+},
+{
+  "name": "Fiend's Ivy",
+  "rule": "",
+},
+{
+  "name": "Gengko Brush",
+  "rule": "",
+},
+{
+  "name": "2 Luminous Cap Dust",
+  "rule": "",
+},
+{
+  "name": "Radiant Synthseed",
+  "rule": "",
+},
+{
+  "name": "Wisp Stalks",
+  "rule": "",
+},
+],
+
+"Underwater": [
+{
+  "name": "2 Hydrathistle",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Hyacinth Nectar",
+  "rule": "",
+},
+{
+  "name": "2 Chromus Slime",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Wrackwort Bulbs",
+  "rule": "",
+},
+{
+  "name": "2 Cosmos Glond",
+  "rule": "",
+},
+],
+
+"Common": [
+{
+  "name": "Mandrake Root",
+  "rule": "",
+},
+{
+  "name": "Quicksilver Lichen",
+  "rule": "",
+},
+{
+  "name": "Quicksilver Lichen",
+  "rule": "",
+},
+{
+  "name": "Wild Sageroot",
+  "rule": "",
+},
+{
+  "name": "Wild Sageroot",
+  "rule": "",
+},
+{
+  "name": "Common",
+  "rule": "common",
+},
+{
+  "name": "Wyrmtongue Petals",
+  "rule": "",
+},
+{
+  "name": "Wyrmtongue Petals",
+  "rule": "",
+},
+{
+  "name": "Milkweed Seeds",
+  "rule": "",
+},
+{
+  "name": "Milkweed Seeds",
+  "rule": "",
+},
+{
+  "name": "Mandrake Root",
+  "rule": "",
+},
 ],
 }
+

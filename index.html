@@ -2,6 +2,7 @@
 <html ng-app="todoApp">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="data.json"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -9,7 +10,7 @@
     <h2>Herbalism Ingredient Roller</h2>
     <div ng-controller="TodoListController as todoList">
       <div>
-        1. Select your environment:
+        1. Where are you?
         <select ng-model="environment">
           <option ng-repeat="e in environments">{{e}}</option>
         </select>
@@ -18,7 +19,7 @@
       <br/>
 
       <div>
-        2. Select the weather:
+        2. What's it like near you?
         <select ng-model="weather">
           <option ng-repeat="w in weathers">{{w}}</option>
         </select>
@@ -27,7 +28,7 @@
       <br/>
 
       <div>
-        3. Input your Herbalism modifier: 
+        3. What's your Herbalism modifier: 
         <input ng-model="mod" type="number" />
       </div>
 
@@ -40,7 +41,7 @@
       <br/>
 
       <div>
-        <div>Ingredients found:</div>
+        <div><b>Ingredients found:</b></div>
         <div ng-repeat="roll in rolls track by $index">{{roll}}</div>
       </div>
 
