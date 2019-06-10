@@ -1,1 +1,49 @@
-hello world
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>Herbalism Ingredient Roller</h2>
+    <div ng-controller="TodoListController as todoList">
+      <div>
+        1. Select your environment:
+        <select ng-model="environment">
+          <option ng-repeat="e in environments">{{e}}</option>
+        </select>
+      </div>
+
+      <br/>
+
+      <div>
+        2. Select the weather:
+        <select ng-model="weather">
+          <option ng-repeat="w in weathers">{{w}}</option>
+        </select>
+      </div>
+
+      <br/>
+
+      <div>
+        3. Input your Herbalism modifier: 
+        <input ng-model="mod" type="number" />
+      </div>
+
+      <br/>
+
+      <div>
+        <button ng-click="harvest()">Gather Herbs</button>
+      </div>
+
+      <br/>
+
+      <div>
+        <div>Ingredients found:</div>
+        <div ng-repeat="roll in rolls track by $index">{{roll}}</div>
+      </div>
+
+    </div>
+  </body>
+</html>
